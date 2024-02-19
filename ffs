@@ -1,0 +1,18 @@
+#!/bin/bash 
+input="$@"
+earch=${input// /+}
+firefox "https://www.marktplaats.nl/q/$earch/#sortBy:SORT_INDEX|sortOrder:DECREASING|searchInTitleAndDescription:true" "https://tweakers.net/aanbod/zoeken/?keyword=$earch" "https://www.leboncoin.fr/recherche?text=$earch&sort=time" "https://www.2dehands.be/q/$earch/#Language:all-languages|sortBy:SORT_INDEX|sortOrder:DECREASING|searchInTitleAndDescription:true" "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz?keyword=$earch" "https://www.finn.no/bap/forsale/search.html?q=$earch" "https://www.blocket.se/annonser/hela_sverige?q=$earch&sort=date" "https://www.dba.dk/soeg/?soeg=$earch&sort=listingdate-desc" "https://www.ebay-kleinanzeigen.de/s-$earch/k0" "https://www.tutti.ch/de/q/suche?query=$earch" "https://www.catawiki.com/nl/s/?q=$earch" "https://www.etsy.com/search?q=$earch" "https://www.ebay.nl/sch/i.html?_nkw=$earch&_sop=10"
+#firefox "https://www.marktplaats.nl/q/$earch" "https://www.leboncoin.fr/recherche?text=$earch" "https://www.2dehands.be/q/$earch/" "https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz?keyword=$earch" "https://www.blocket.se/annonser/hela_sverige?q=$earch" "https://www.dba.dk/soeg/?soeg=$earch" "https://www.ebay-kleinanzeigen.de/s-$earch/k0" "https://www.tutti.ch/de/li/ganze-schweiz?q=$earch" "https://www.catawiki.com/nl/s/?q=$earch" "https://www.etsy.com/search?q=$earch"
+#echo $earch
+#https://www.marktplaats.nl/q/QUERY+REQUEST/
+#https://www.leboncoin.fr/recherche?text=QUERY%20REQUEST
+#https://www.2dehands.be/q/QUERY+REQUEST/
+#https://www.willhaben.at/iad/kaufen-und-verkaufen/marktplatz?keyword=QUERY REQUEST
+#https://www.blocket.se/annonser/hela_sverige?q=QUERY+REQUEST
+#https://www.dba.dk/soeg/?soeg=QUERY+REQUEST
+#https://www.ebay-kleinanzeigen.de/s-QUERY-REQUEST/k0
+#https://www.tutti.ch/de/q/suche?query=QUERY+REQUEST
+#https://www.catawiki.com/nl/s/?q=QUERY REQUEST
+#https://www.etsy.com/search?q=QUERY REQUEST
+#https://tweakers.net/aanbod/zoeken/?keyword=QUERY+REQUEST
+#https://www.ebay.nl/sch/i.html?_nkw=QUERY+REQUESTi&_sop=10
